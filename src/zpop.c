@@ -562,7 +562,7 @@ int RedisModule_OnLoad(RedisModuleCtx *ctx, RedisModuleString **argv, int argc) 
     REDISMODULE_NOT_USED(argc);
 
     // Register the module
-    if (RedisModule_Init(ctx,"zpop",1,REDISMODULE_APIVER_1)
+    if (RedisModule_Init(ctx,"ZePOP", 1, REDISMODULE_APIVER_1)
         == REDISMODULE_ERR) return REDISMODULE_ERR;
 
     // Register the commands
@@ -587,7 +587,7 @@ int RedisModule_OnLoad(RedisModuleCtx *ctx, RedisModuleString **argv, int argc) 
         return REDISMODULE_ERR;
 
     // Initialize the globals
-    popTypeError = (void*)"z-pop-type-error-special-pointer-426144";
+    popTypeError = (void*)"ze-pop-type-error-special-pointer-426144";
     gz.RK = raxNew();
     gz.RBC = raxNew();
     gz.stats = RedisModule_Alloc(sizeof(long long) * ZPOP_STAT_meta_last);
@@ -600,7 +600,7 @@ int RedisModule_OnLoad(RedisModuleCtx *ctx, RedisModuleString **argv, int argc) 
     RedisModule_SubscribeToKeyspaceEvents(ctx, mask, keySpaceEventsHandler);
 
     // Make a happy sound
-    RedisModule_Log(ctx,"info","zpop module loaded - woot woot woot!");
+    RedisModule_Log(ctx,"info","Ze POP module loaded - woot woot woot!");
 
     return REDISMODULE_OK;
 }

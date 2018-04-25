@@ -1,4 +1,4 @@
-# ZPOP
+# Ze POP Redis Module
 
 An educational [Redis](https://redis.io) module that implements ze [top requested](https://github.com/antirez/redis/issues/1861) Redis feature by users.
 
