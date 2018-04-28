@@ -53,24 +53,28 @@ P.S. no fruits were harmed during the creation of this module.
 
 ### `Z.POP <key>`
 > Time complexity: O(log(N)) with N being the number of elements in the sorted set
+
 Pops (remove and return) the lowest-ranking element from a sorted set.
 
 **Return value:** Array, specifically the popped element's score and the popped element itself, or nil if key doesn't exist.
 
 ### `Z.REVPOP <key>`
 > Time complexity: O(log(N)) with N being the number of elements in the sorted set
+
 Pops (remove and return) the highest-ranking element from a sorted set.
 
 **Return value:** Array, specifically the popped element's score and the popped element itself, or nil if key doesn't exist.
 
 ### `Z.BPOP <key> [<key> ...] <timeout>`
 > Time complexity: O(log(N)) with N being the number of elements in the sorted set
+
 Pops (remove and return) the lowest-ranking element from a sorted set. If the key doesn't exist, it blocks until `<timeout>` (given in milliseconds) is met. A value of 0 for the `<timeout>` means block indefinitely.
 
 **Return value:** Array, specifically the popped key, the popped element's score and the popped element itself, or nil if the timeout is met.
 
 ### `Z.REVBPOP <key> [<key> ...] <timeout>`
 > Time complexity: O(log(N)) with N being the number of elements in the sorted set
+
 Pops (remove and return) the highest-ranking element from a sorted set. If the key doesn't exist, it blocks until `<timeout>` (given in milliseconds) is met. A value of 0 for the `<timeout>` means block indefinitely.
 
 **Return value:** Array, specifically the popped key, the popped element's score and the popped element itself, or nil if the timeout is met.
