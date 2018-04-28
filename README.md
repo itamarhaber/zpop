@@ -48,6 +48,7 @@ Then, because blocking operations are so cool (and you can't do that in Lua), it
 Lastly, for keeping track over the interconnectedness of all things, the it uses [Rax](https://github.com/antirez/rax) (but still implements its own minimal linked list) :)
 
 P.S. no fruits were harmed during the creation of this module.
+P.S.S. honorable mention: https://github.com/RedisLabsModules/redex#zpop-key-withscore
 
 ## Commands
 
