@@ -2,7 +2,7 @@
 
 An educational [Redis](https://redis.io) module that implements ze [top requested](https://github.com/antirez/redis/issues/1861) Redis feature by users.
 
-Has hopes (or the vanity) of becoming a part of ze core one day /cc @antirez ;)
+Has hopes (or the vanity) of becoming a part of ze core one day - see pull request [_"#4879 Implements [B]Z[REV]POP and the respective unit tests"_](https://github.com/antirez/redis/pull/4879) /cc @antirez ;)
 
 Developed w/ <3 for RedisConf 18 and ze Redis community.
 
