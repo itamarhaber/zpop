@@ -3,3 +3,6 @@ all:
 
 clean:
 	$(MAKE) -C ./src clean
+
+test:
+	echo "TBD"

@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  zpop:
+    image: zpop
+    build: .
+    ports:
+      - 6379:6379
