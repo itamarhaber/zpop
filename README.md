@@ -10,6 +10,8 @@ Developed w/ <3 for RedisConf 18 and ze Redis community.
 
 Fresh out of development, and needs tests -> proof of concept.
 
+**WARNING**: TOTALLY UNSAFE FOR USE WITH ANY SYSTEM THAT USES `MULTI/EXEC` AND/OR LUA SCRIPTS
+
 ## Quickstart (or Ze Demo)
 
 ### Terminal window #1
